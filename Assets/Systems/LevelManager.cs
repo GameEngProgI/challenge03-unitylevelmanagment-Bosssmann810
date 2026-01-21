@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public Transform _playerlocation;
+    private GameObject player;
     public GameObject _startlevel;
     public GameObject _level2;
 
@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        player = SurviceHub.Instance.playerController.gameObject;
         _startlevel.SetActive(true);
         _level2.SetActive(false);
 
@@ -21,6 +22,6 @@ public class LevelManager : MonoBehaviour
         currentlevel.SetActive(false);
         leveltoload.SetActive(true);
         currentlevel = leveltoload;
-        _playerlocation.position = spawn.position;
+        player.transform.position = spawn.position;
     }
 }

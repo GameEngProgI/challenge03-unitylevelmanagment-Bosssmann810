@@ -5729,9 +5729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbcd1e6dbf4d4fc468d6d48ae91d04fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerlocation: {fileID: 991472020}
-  level1: {fileID: 1740715333}
-  level2: {fileID: 887540290}
+  _startlevel: {fileID: 1740715333}
+  _level2: {fileID: 887540290}
 --- !u!4 &1505060332
 Transform:
   m_ObjectHideFlags: 0
