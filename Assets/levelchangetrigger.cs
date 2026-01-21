@@ -11,6 +11,7 @@ public class levelchangetrigger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         _levelManager = SurviceHub.Instance.levelManager;
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,7 +19,7 @@ public class levelchangetrigger : MonoBehaviour
         Debug.Log("entered");
         if (collision.CompareTag("Player"))
         {
-            _levelManager.levelchange(_levelToActivate, _spawnLocal, _currentLevel);
+            _levelManager.levelchange(_levelToActivate, _spawnLocal);
 
         }
 

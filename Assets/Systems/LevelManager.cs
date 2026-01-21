@@ -2,12 +2,25 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public Transform playerlocation;
+    public Transform _playerlocation;
+    public GameObject _startlevel;
+    public GameObject _level2;
 
-    public void levelchange(GameObject leveltoload, Transform spawn, GameObject leveltodespawn)
+    private GameObject currentlevel;
+
+    private void Start()
     {
-        leveltodespawn.SetActive(false);
+        _startlevel.SetActive(true);
+        _level2.SetActive(false);
+
+        currentlevel = _startlevel;
+    }
+
+    public void levelchange(GameObject leveltoload, Transform spawn)
+    {
+        currentlevel.SetActive(false);
         leveltoload.SetActive(true);
-        playerlocation.position = spawn.position;
+        currentlevel = leveltoload;
+        _playerlocation.position = spawn.position;
     }
 }

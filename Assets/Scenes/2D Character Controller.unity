@@ -4929,7 +4929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6787406445408569355, guid: 046fc7bb632c2be42a492d2af98604c6, type: 3}
       propertyPath: m_Name
-      value: levelchangetrigger
+      value: northlevelchangetrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8515690082906494941, guid: 046fc7bb632c2be42a492d2af98604c6, type: 3}
       propertyPath: _spawnLocal
@@ -5730,6 +5730,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerlocation: {fileID: 991472020}
+  level1: {fileID: 1740715333}
+  level2: {fileID: 887540290}
 --- !u!4 &1505060332
 Transform:
   m_ObjectHideFlags: 0
@@ -6574,7 +6576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7477146733445322046, guid: 03eceec83e5468d45aa305907c630b0a, type: 3}
       propertyPath: m_Name
-      value: spawnpoint
+      value: northspawnpoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6636,7 +6638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7477146733445322046, guid: 03eceec83e5468d45aa305907c630b0a, type: 3}
       propertyPath: m_Name
-      value: spawnpoint
+      value: southspawnpoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6693,7 +6695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6787406445408569355, guid: 046fc7bb632c2be42a492d2af98604c6, type: 3}
       propertyPath: m_Name
-      value: levelchangetrigger
+      value: southlevelchangetrigger
       objectReference: {fileID: 0}
     - target: {fileID: 8515690082906494941, guid: 046fc7bb632c2be42a492d2af98604c6, type: 3}
       propertyPath: spawnlocal
